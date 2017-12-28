@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-
+    var missings : [Surprise]!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        missings = [Surprise]()
+        missings.append(Surprise(code: "SD123", description: "Gargamella", year: 2017))
+        missings.append(Surprise(code: "SD124", description: "Puffetta", year: 2017))
+        missings.append(Surprise(code: "SD125", description: "Tontolone", year: 2017))
+        
+        let tabBarController = window?.rootViewController as? UITabBarController
+        let navigationController = tabBarController?.viewControllers?.first as? UINavigationController
+        let missingsViewController = navigationController?.viewControllers.first as? MissingsViewController
+        
+        missingsViewController?.missings = missings
+        FirebaseApp.configure()
         return true
     }
 
@@ -40,7 +51,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

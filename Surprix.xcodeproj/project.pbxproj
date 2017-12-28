@@ -7,21 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3059BBD1FF55508005EA8F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3059BBC1FF55508005EA8F8 /* GoogleService-Info.plist */; };
 		C3ABCD311FE55F22003FB520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCD301FE55F22003FB520 /* AppDelegate.swift */; };
-		C3ABCD331FE55F22003FB520 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCD321FE55F22003FB520 /* ViewController.swift */; };
 		C3ABCD361FE55F22003FB520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3ABCD341FE55F22003FB520 /* Main.storyboard */; };
 		C3ABCD381FE55F22003FB520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3ABCD371FE55F22003FB520 /* Assets.xcassets */; };
 		C3ABCD3B1FE55F22003FB520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3ABCD391FE55F22003FB520 /* LaunchScreen.storyboard */; };
+		C3ABCD491FE57203003FB520 /* MissingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCD481FE57203003FB520 /* MissingsViewController.swift */; };
+		C3ABCD4B1FE57231003FB520 /* Surprise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCD4A1FE57231003FB520 /* Surprise.swift */; };
+		C3ABCD4D1FE5921D003FB520 /* ProducerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCD4C1FE5921D003FB520 /* ProducerViewController.swift */; };
+		C3ABCD511FE598CE003FB520 /* Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCD501FE598CE003FB520 /* Year.swift */; };
+		C3ABCD531FE598F5003FB520 /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCD521FE598F5003FB520 /* Producer.swift */; };
+		C3D44F291FE9628F00F87EA7 /* YearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D44F281FE9628F00F87EA7 /* YearViewController.swift */; };
+		C3D44F2B1FE96FC600F87EA7 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D44F2A1FE96FC600F87EA7 /* Set.swift */; };
+		C3D44F2D1FE9706B00F87EA7 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D44F2C1FE9706B00F87EA7 /* SetViewController.swift */; };
+		C3D44F2F1FE9728200F87EA7 /* SetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D44F2E1FE9728200F87EA7 /* SetDetailViewController.swift */; };
+		C3D44F311FE98AFE00F87EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D44F301FE98AFE00F87EA7 /* Main.storyboard */; };
+		FD76FC75C2D0EC3FD8350BE1 /* Pods_Surprix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57091CD7DADB38722813F732 /* Pods_Surprix.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57091CD7DADB38722813F732 /* Pods_Surprix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Surprix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3059BBC1FF55508005EA8F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C3ABCD2D1FE55F22003FB520 /* Surprix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surprix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3ABCD301FE55F22003FB520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3ABCD321FE55F22003FB520 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3ABCD351FE55F22003FB520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3ABCD371FE55F22003FB520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3ABCD3A1FE55F22003FB520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3ABCD3C1FE55F22003FB520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3ABCD441FE570E9003FB520 /* Surprix-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Surprix-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3ABCD481FE57203003FB520 /* MissingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingsViewController.swift; sourceTree = "<group>"; };
+		C3ABCD4A1FE57231003FB520 /* Surprise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surprise.swift; sourceTree = "<group>"; };
+		C3ABCD4C1FE5921D003FB520 /* ProducerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducerViewController.swift; sourceTree = "<group>"; };
+		C3ABCD501FE598CE003FB520 /* Year.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Year.swift; sourceTree = "<group>"; };
+		C3ABCD521FE598F5003FB520 /* Producer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Producer.swift; sourceTree = "<group>"; };
+		C3D44F281FE9628F00F87EA7 /* YearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearViewController.swift; sourceTree = "<group>"; };
+		C3D44F2A1FE96FC600F87EA7 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		C3D44F2C1FE9706B00F87EA7 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
+		C3D44F2E1FE9728200F87EA7 /* SetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetDetailViewController.swift; sourceTree = "<group>"; };
+		C3D44F301FE98AFE00F87EA7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CD96F203937BFD7EDA17FC26 /* Pods-Surprix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surprix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Surprix/Pods-Surprix.debug.xcconfig"; sourceTree = "<group>"; };
+		E9BBE8E15AF9430BA43351B6 /* Pods-Surprix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surprix.release.xcconfig"; path = "Pods/Target Support Files/Pods-Surprix/Pods-Surprix.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +54,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD76FC75C2D0EC3FD8350BE1 /* Pods_Surprix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CADBE198DD6471313B4140A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57091CD7DADB38722813F732 /* Pods_Surprix.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3ABCD241FE55F22003FB520 = {
 			isa = PBXGroup;
 			children = (
+				C3D44F301FE98AFE00F87EA7 /* Main.storyboard */,
+				C3ABCD4F1FE59298003FB520 /* Model */,
+				C3ABCD4E1FE59280003FB520 /* ViewControllers */,
 				C3ABCD2F1FE55F22003FB520 /* Surprix */,
 				C3ABCD2E1FE55F22003FB520 /* Products */,
+				C3ABCD441FE570E9003FB520 /* Surprix-Bridging-Header.h */,
+				C46CA626A1E4C87BCABF5107 /* Pods */,
+				5CADBE198DD6471313B4140A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +94,46 @@
 		C3ABCD2F1FE55F22003FB520 /* Surprix */ = {
 			isa = PBXGroup;
 			children = (
+				C3059BBC1FF55508005EA8F8 /* GoogleService-Info.plist */,
 				C3ABCD301FE55F22003FB520 /* AppDelegate.swift */,
-				C3ABCD321FE55F22003FB520 /* ViewController.swift */,
 				C3ABCD341FE55F22003FB520 /* Main.storyboard */,
 				C3ABCD371FE55F22003FB520 /* Assets.xcassets */,
 				C3ABCD391FE55F22003FB520 /* LaunchScreen.storyboard */,
 				C3ABCD3C1FE55F22003FB520 /* Info.plist */,
 			);
 			path = Surprix;
+			sourceTree = "<group>";
+		};
+		C3ABCD4E1FE59280003FB520 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3ABCD4C1FE5921D003FB520 /* ProducerViewController.swift */,
+				C3ABCD481FE57203003FB520 /* MissingsViewController.swift */,
+				C3D44F2E1FE9728200F87EA7 /* SetDetailViewController.swift */,
+				C3D44F281FE9628F00F87EA7 /* YearViewController.swift */,
+				C3D44F2C1FE9706B00F87EA7 /* SetViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C3ABCD4F1FE59298003FB520 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3ABCD4A1FE57231003FB520 /* Surprise.swift */,
+				C3ABCD501FE598CE003FB520 /* Year.swift */,
+				C3D44F2A1FE96FC600F87EA7 /* Set.swift */,
+				C3ABCD521FE598F5003FB520 /* Producer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C46CA626A1E4C87BCABF5107 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD96F203937BFD7EDA17FC26 /* Pods-Surprix.debug.xcconfig */,
+				E9BBE8E15AF9430BA43351B6 /* Pods-Surprix.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3ABCD3F1FE55F22003FB520 /* Build configuration list for PBXNativeTarget "Surprix" */;
 			buildPhases = (
+				AD217C0B24EF82A53F744D3A /* [CP] Check Pods Manifest.lock */,
 				C3ABCD291FE55F22003FB520 /* Sources */,
 				C3ABCD2A1FE55F22003FB520 /* Frameworks */,
 				C3ABCD2B1FE55F22003FB520 /* Resources */,
+				5E6E55EEEADC6C473154B220 /* [CP] Embed Pods Frameworks */,
+				0D177051A4D9C1CA97739DAC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +171,7 @@
 				TargetAttributes = {
 					C3ABCD2C1FE55F22003FB520 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,18 +201,88 @@
 			files = (
 				C3ABCD3B1FE55F22003FB520 /* LaunchScreen.storyboard in Resources */,
 				C3ABCD381FE55F22003FB520 /* Assets.xcassets in Resources */,
+				C3059BBD1FF55508005EA8F8 /* GoogleService-Info.plist in Resources */,
 				C3ABCD361FE55F22003FB520 /* Main.storyboard in Resources */,
+				C3D44F311FE98AFE00F87EA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D177051A4D9C1CA97739DAC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Surprix/Pods-Surprix-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E6E55EEEADC6C473154B220 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Surprix/Pods-Surprix-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Surprix/Pods-Surprix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD217C0B24EF82A53F744D3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Surprix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3ABCD291FE55F22003FB520 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3ABCD331FE55F22003FB520 /* ViewController.swift in Sources */,
+				C3D44F2B1FE96FC600F87EA7 /* Set.swift in Sources */,
+				C3D44F2D1FE9706B00F87EA7 /* SetViewController.swift in Sources */,
+				C3ABCD491FE57203003FB520 /* MissingsViewController.swift in Sources */,
+				C3ABCD4B1FE57231003FB520 /* Surprise.swift in Sources */,
+				C3D44F291FE9628F00F87EA7 /* YearViewController.swift in Sources */,
+				C3ABCD511FE598CE003FB520 /* Year.swift in Sources */,
+				C3ABCD531FE598F5003FB520 /* Producer.swift in Sources */,
+				C3ABCD4D1FE5921D003FB520 /* ProducerViewController.swift in Sources */,
+				C3D44F2F1FE9728200F87EA7 /* SetDetailViewController.swift in Sources */,
 				C3ABCD311FE55F22003FB520 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,29 +418,36 @@
 		};
 		C3ABCD401FE55F22003FB520 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD96F203937BFD7EDA17FC26 /* Pods-Surprix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Surprix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucagiorgetti.Surprix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Surprix-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C3ABCD411FE55F22003FB520 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9BBE8E15AF9430BA43351B6 /* Pods-Surprix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Surprix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucagiorgetti.Surprix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Surprix-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
