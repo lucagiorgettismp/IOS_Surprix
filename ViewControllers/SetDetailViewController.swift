@@ -7,8 +7,14 @@
 //
 
 import UIKit
+class SetDetailViewCell : UITableViewCell{
+
+}
 
 class SetDetailViewController: UITableViewController {
+    
+    var passedValue: String = ""
+    
     var surprises: [Surprise]!
     
     @IBAction func cancel(sender: AnyObject)   {
@@ -17,13 +23,6 @@ class SetDetailViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        surprises = [Surprise]()
-        surprises.append(Surprise(code: "SD112", description: "Pippo", year: 2016))
-        surprises.append(Surprise(code: "SD113", description: "Pluto", year: 2016))
-        surprises.append(Surprise(code: "SD114", description: "Paperino", year: 2016))
-        surprises.append(Surprise(code: "SD115", description: "Pierino", year: 2016))
         tableView.tableFooterView = UIView()
     }
 
@@ -45,7 +44,7 @@ class SetDetailViewController: UITableViewController {
 
         let surp = self.surprises[indexPath.row]
         
-        cell.textLabel?.text = surp.descr
+        cell.textLabel?.text = surp.description
         cell.detailTextLabel?.text = surp.code
 
         return cell
