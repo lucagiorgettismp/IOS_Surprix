@@ -93,7 +93,7 @@ class YearViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "yearSegue"){
-            let navCont = segue.destination as! SetDetailViewController
+            let navCont = segue.destination as! SetViewController
             print("Prendo value: " + self.valueSelected )
             navCont.passedValue = self.valueSelected
         }

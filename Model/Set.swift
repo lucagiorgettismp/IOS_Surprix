@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class Set {
     let id: String
@@ -31,5 +32,19 @@ class Set {
         self.imgPath = imgPath
         self.category = category
         self.id = name.replacingOccurrences(of: " ", with: "") + "_" + String(describing: year)
+    }
+    
+    init(snap: DataSnapshot){
+        let set = snap.value as! [String: Any]
+        self.year = set["year"] as! Int
+        self.name = set["name"] as! String
+        self.producer_name = set["producer_name"] as! String
+        self.product = set["product"] as! String
+        self.producer_color = set["producer_color"] as! String
+        self.year_id = set["year_id"] as! String
+        self.nation = set["nation"] as! String
+        self.imgPath = set["img_path"] as! String
+        self.category = set["category"] as! String
+        self.id = set["id"] as! String
     }
 }
