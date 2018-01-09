@@ -38,3 +38,20 @@ func getColorByName(color: String) -> UIColor{
         return UIColor.CustomColor.yellowSet
     }
 }
+
+public extension UIView {
+    public func pin(to view: UIView) {
+        NSLayoutConstraint.activate([
+            leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            topAnchor.constraint(equalTo: view.topAnchor),
+            bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            ])
+    }
+}
+
+func pinBackground(_ view: UIView, to stackView: UIStackView) {
+    view.translatesAutoresizingMaskIntoConstraints = false
+    stackView.insertSubview(view, at: 0)
+    view.pin(to: stackView)
+}

@@ -2,7 +2,7 @@
 //  MissingsViewController.swift
 //  Surprix
 //
-//  Created by Administrator on 16/12/2017.
+//  Created by Administrator on 08/01/2018.
 //  Copyright © 2017 Luca Giorgetti. All rights reserved.
 //
 
@@ -10,8 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-
-class MissingsTableViewCell: UITableViewCell {
+class DoublesTableViewCell: UITableViewCell {
     @IBOutlet weak var surpriseImage: UIImageView!
     @IBOutlet weak var codeLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -25,12 +24,11 @@ class MissingsTableViewCell: UITableViewCell {
         view.backgroundColor = .yellow
         return view
     }()
-    
 }
 
-class MissingsViewController: UITableViewController {
+class DoublesViewController: UITableViewController {
    
-    var missings = [Surprise]()
+    var doubles = [Surprise]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,23 +38,22 @@ class MissingsViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.getMissingData(username: Variables.username)
+        self.getDoublesData(username: Variables.username)
     }
     
-    
-    func getMissingData(username: String) {
-        var missings : [Surprise] = []
+    func getDoublesData(username: String) {
+        var doubles : [Surprise] = []
         
         let ref = Database.database().reference()
-        ref.child("missings").child(Variables.username).observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child("user_doubles").child(Variables.username).observeSingleEvent(of: .value, with: { (snapshot) in
             
             for child in snapshot.children.allObjects{
                 let c = child as! DataSnapshot
                 ref.child("surprises").child(c.key).queryOrdered(byChild: "code").observeSingleEvent(of: .value, with: { (snap) in
                     if (snap.exists()){
                         let surp = Surprise(snap: snap )
-                        missings.append(surp)
-                        self.missings = missings
+                        doubles.append(surp)
+                        self.doubles = doubles
                         self.tableView.reloadData()
                     }
                 })}
@@ -73,13 +70,13 @@ class MissingsViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.missings.count
+        return self.doubles.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MissingCell", for: indexPath) as! MissingsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DoubleCell", for: indexPath) as! DoublesTableViewCell
 
-        let surp = self.missings[indexPath.row]
+        let surp = self.doubles[indexPath.row]
         
         cell.codeLabel?.text = surp.code
         cell.descriptionLabel?.text = surp.description
@@ -102,8 +99,9 @@ class MissingsViewController: UITableViewController {
             }
         }
         dataTask.resume()
-        cell.backgroundTitle.backgroundColor = getColorByName(color: String(surp.set_producer_color))
+        cell.backgroundTitle.backgroundColor = getColorByName(color: surp.set_producer_color)
         pinBackground(cell.backgroundTitle, to: cell.stackTitle)
+        
         return cell
     }
     

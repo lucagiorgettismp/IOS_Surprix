@@ -51,7 +51,7 @@
                     <navigationItem key="navigationItem" title="Doubles" id="dEo-wK-MiG">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="5bZ-8A-UUv">
                             <connections>
-                                <segue destination="I23-CE-y81" kind="modal" id="Huz-KE-g2N"/>
+                                <segue destination="I23-CE-y81" kind="show" id="Huz-KE-g2N"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -180,7 +180,7 @@
                     <navigationItem key="navigationItem" title="Missings" id="t8C-LX-ZhC">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XrS-Tu-Bln">
                             <connections>
-                                <segue destination="I23-CE-y81" kind="modal" id="lFs-Rb-TDM"/>
+                                <segue destination="I23-CE-y81" kind="show" animates="NO" id="lFs-Rb-TDM"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

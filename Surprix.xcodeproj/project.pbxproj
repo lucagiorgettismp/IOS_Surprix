@@ -12,6 +12,8 @@
 		C33E47621FFC43A50062EF50 /* ColorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E47611FFC43A50062EF50 /* ColorUtility.swift */; };
 		C340EB511FF65B9100A55550 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340EB501FF65B9100A55550 /* LoginViewController.swift */; };
 		C359BDFA1FFE8FCE0066D630 /* CountryUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359BDF91FFE8FCE0066D630 /* CountryUtility.swift */; };
+		C36C92DA2003D1EA00848058 /* SharedVaraibles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C92D92003D1EA00848058 /* SharedVaraibles.swift */; };
+		C3A6EEB22003EFAF0007829E /* DoublesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A6EEB12003EFAF0007829E /* DoublesViewController.swift */; };
 		C3ABCD311FE55F22003FB520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCD301FE55F22003FB520 /* AppDelegate.swift */; };
 		C3ABCD361FE55F22003FB520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3ABCD341FE55F22003FB520 /* Main.storyboard */; };
 		C3ABCD381FE55F22003FB520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3ABCD371FE55F22003FB520 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 		C33E47611FFC43A50062EF50 /* ColorUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtility.swift; sourceTree = "<group>"; };
 		C340EB501FF65B9100A55550 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C359BDF91FFE8FCE0066D630 /* CountryUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryUtility.swift; sourceTree = "<group>"; };
+		C36C92D92003D1EA00848058 /* SharedVaraibles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedVaraibles.swift; sourceTree = "<group>"; };
+		C3A6EEB12003EFAF0007829E /* DoublesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoublesViewController.swift; sourceTree = "<group>"; };
 		C3ABCD2D1FE55F22003FB520 /* Surprix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surprix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3ABCD301FE55F22003FB520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3ABCD351FE55F22003FB520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 		C3ABCD241FE55F22003FB520 = {
 			isa = PBXGroup;
 			children = (
+				C36C92D92003D1EA00848058 /* SharedVaraibles.swift */,
 				C33E47611FFC43A50062EF50 /* ColorUtility.swift */,
 				C359BDF91FFE8FCE0066D630 /* CountryUtility.swift */,
 				C3D44F301FE98AFE00F87EA7 /* Main.storyboard */,
@@ -130,6 +135,7 @@
 			children = (
 				C3ABCD4C1FE5921D003FB520 /* ProducerViewController.swift */,
 				C3ABCD481FE57203003FB520 /* MissingsViewController.swift */,
+				C3A6EEB12003EFAF0007829E /* DoublesViewController.swift */,
 				C3D44F2E1FE9728200F87EA7 /* SetDetailViewController.swift */,
 				C3D44F281FE9628F00F87EA7 /* YearViewController.swift */,
 				C3D44F2C1FE9706B00F87EA7 /* SetViewController.swift */,
@@ -289,6 +295,7 @@
 			files = (
 				C3D44F2B1FE96FC600F87EA7 /* Set.swift in Sources */,
 				C3D44F2D1FE9706B00F87EA7 /* SetViewController.swift in Sources */,
+				C36C92DA2003D1EA00848058 /* SharedVaraibles.swift in Sources */,
 				C3ABCD491FE57203003FB520 /* MissingsViewController.swift in Sources */,
 				C3ABCD4B1FE57231003FB520 /* Surprise.swift in Sources */,
 				C3D44F291FE9628F00F87EA7 /* YearViewController.swift in Sources */,
@@ -297,6 +304,7 @@
 				C3ABCD531FE598F5003FB520 /* Producer.swift in Sources */,
 				C3ABCD4D1FE5921D003FB520 /* ProducerViewController.swift in Sources */,
 				C3D44F2F1FE9728200F87EA7 /* SetDetailViewController.swift in Sources */,
+				C3A6EEB22003EFAF0007829E /* DoublesViewController.swift in Sources */,
 				C3ABCD311FE55F22003FB520 /* AppDelegate.swift in Sources */,
 				C33E47621FFC43A50062EF50 /* ColorUtility.swift in Sources */,
 				C340EB511FF65B9100A55550 /* LoginViewController.swift in Sources */,
