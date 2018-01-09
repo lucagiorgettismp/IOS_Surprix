@@ -26,7 +26,7 @@ class SetDetailViewController: UITableViewController {
     var surprises = [Surprise]()
     
     @IBAction func cancel(sender: AnyObject)   {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     private func pinBackground(_ view: UIView, to stackView: UIStackView) {
@@ -130,12 +130,18 @@ class SetDetailViewController: UITableViewController {
     func addMissing(surpriseId: String){
         let ref = Database.database().reference()
         ref.child("missings").child(Variables.username).child(surpriseId).setValue(true)
+        let alert = UIAlertController(title: "Added", message: "Added to missings", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     func addDouble(surpriseId: String){
         let ref = Database.database().reference()
         ref.child("user_doubles").child(Variables.username).child(surpriseId).setValue(true)
         ref.child("surprise_doubles").child(surpriseId).child(Variables.username).setValue(true)
+        let alert = UIAlertController(title: "Added", message: "Added to doubles", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

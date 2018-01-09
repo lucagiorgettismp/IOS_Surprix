@@ -22,7 +22,7 @@ class YearViewController: UITableViewController {
     var valueSelected: String = ""
     
     @IBAction func cancel(sender: AnyObject)   {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     var years = [Year]()

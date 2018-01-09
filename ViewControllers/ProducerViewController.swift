@@ -16,7 +16,6 @@ class ProducersTableViewCell : UITableViewCell{
     var producerId: String = ""
 }
 
-
 class ProducerViewController: UITableViewController {
 
     @IBAction func cancel(sender: AnyObject)   {

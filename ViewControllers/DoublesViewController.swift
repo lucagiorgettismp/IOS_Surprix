@@ -19,6 +19,8 @@ class DoublesTableViewCell: UITableViewCell {
     @IBOutlet weak var producerLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var stackTitle: UIStackView!
+    var surpId: String = ""
+    
     var backgroundTitle: UIView = {
         let view = UIView()
         view.backgroundColor = .yellow
@@ -82,6 +84,7 @@ class DoublesViewController: UITableViewController {
         cell.descriptionLabel?.text = surp.description
         cell.yearLabel?.text = String(surp.set_year)
         cell.setLabel?.text = surp.set_name
+        cell.surpId = surp.id
         
         cell.countryLabel?.text = getCountryNameByCode(code: surp.set_nation)
 
@@ -107,5 +110,25 @@ class DoublesViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90;
+    }
+    
+    func removeFromDoubles(surpriseId: String){
+        let ref = Database.database().reference()
+        ref.child("user_doubles").child(Variables.username).child(surpriseId).setValue(nil)
+        ref.child("surprise_doubles").child(surpriseId).child(Variables.username).setValue(nil)
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! DoublesTableViewCell
+        let alert = UIAlertController(title: "Remove item", message: "Do you want to remove clicked item?", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in
+            self.removeFromDoubles(surpriseId: cell.surpId);
+            self.viewDidAppear(false)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "CANCEL", style: UIAlertActionStyle.cancel, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }

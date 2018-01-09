@@ -20,7 +20,7 @@ class SetTableViewCell : UITableViewCell {
 
 class SetViewController: UITableViewController {
     @IBAction func cancel(sender: AnyObject)   {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     var sets = [Set]()
