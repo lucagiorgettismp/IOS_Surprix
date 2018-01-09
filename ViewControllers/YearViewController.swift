@@ -29,7 +29,6 @@ class YearViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("apertura: value = " + self.passedValue)
         tableView.tableFooterView = UIView()
     }
     
@@ -87,14 +86,12 @@ class YearViewController: UITableViewController {
         let currCell = tableView.cellForRow(at: indexPath) as! YearTableViewCell
         
         self.valueSelected = currCell.yearId
-        print("Setto value: " + currCell.yearId )
         performSegue(withIdentifier: "yearSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "yearSegue"){
             let navCont = segue.destination as! SetViewController
-            print("Prendo value: " + self.valueSelected )
             navCont.passedValue = self.valueSelected
         }
     }

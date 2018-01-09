@@ -14,10 +14,9 @@
 		C359BDFA1FFE8FCE0066D630 /* CountryUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359BDF91FFE8FCE0066D630 /* CountryUtility.swift */; };
 		C36C92DA2003D1EA00848058 /* SharedVaraibles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C92D92003D1EA00848058 /* SharedVaraibles.swift */; };
 		C3A6EEB22003EFAF0007829E /* DoublesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A6EEB12003EFAF0007829E /* DoublesViewController.swift */; };
+		C3A6EEBA200512520007829E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A6EEB9200512520007829E /* Assets.xcassets */; };
 		C3ABCD311FE55F22003FB520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCD301FE55F22003FB520 /* AppDelegate.swift */; };
 		C3ABCD361FE55F22003FB520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3ABCD341FE55F22003FB520 /* Main.storyboard */; };
-		C3ABCD381FE55F22003FB520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3ABCD371FE55F22003FB520 /* Assets.xcassets */; };
-		C3ABCD3B1FE55F22003FB520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3ABCD391FE55F22003FB520 /* LaunchScreen.storyboard */; };
 		C3ABCD491FE57203003FB520 /* MissingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCD481FE57203003FB520 /* MissingsViewController.swift */; };
 		C3ABCD4B1FE57231003FB520 /* Surprise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCD4A1FE57231003FB520 /* Surprise.swift */; };
 		C3ABCD4D1FE5921D003FB520 /* ProducerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABCD4C1FE5921D003FB520 /* ProducerViewController.swift */; };
@@ -40,13 +39,11 @@
 		C359BDF91FFE8FCE0066D630 /* CountryUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryUtility.swift; sourceTree = "<group>"; };
 		C36C92D92003D1EA00848058 /* SharedVaraibles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedVaraibles.swift; sourceTree = "<group>"; };
 		C3A6EEB12003EFAF0007829E /* DoublesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoublesViewController.swift; sourceTree = "<group>"; };
+		C3A6EEB9200512520007829E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3ABCD2D1FE55F22003FB520 /* Surprix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surprix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3ABCD301FE55F22003FB520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3ABCD351FE55F22003FB520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C3ABCD371FE55F22003FB520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C3ABCD3A1FE55F22003FB520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3ABCD3C1FE55F22003FB520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3ABCD441FE570E9003FB520 /* Surprix-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Surprix-Bridging-Header.h"; sourceTree = "<group>"; };
 		C3ABCD481FE57203003FB520 /* MissingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissingsViewController.swift; sourceTree = "<group>"; };
 		C3ABCD4A1FE57231003FB520 /* Surprise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surprise.swift; sourceTree = "<group>"; };
 		C3ABCD4C1FE5921D003FB520 /* ProducerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducerViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +100,6 @@
 				C3ABCD4E1FE59280003FB520 /* ViewControllers */,
 				C3ABCD2F1FE55F22003FB520 /* Surprix */,
 				C3ABCD2E1FE55F22003FB520 /* Products */,
-				C3ABCD441FE570E9003FB520 /* Surprix-Bridging-Header.h */,
 				1ECF0A19F099B5F8915A71AB /* Frameworks */,
 				35EE6CC874A058849B816ED6 /* Pods */,
 			);
@@ -120,11 +116,10 @@
 		C3ABCD2F1FE55F22003FB520 /* Surprix */ = {
 			isa = PBXGroup;
 			children = (
+				C3A6EEB9200512520007829E /* Assets.xcassets */,
 				C3059BBC1FF55508005EA8F8 /* GoogleService-Info.plist */,
 				C3ABCD301FE55F22003FB520 /* AppDelegate.swift */,
 				C3ABCD341FE55F22003FB520 /* Main.storyboard */,
-				C3ABCD371FE55F22003FB520 /* Assets.xcassets */,
-				C3ABCD391FE55F22003FB520 /* LaunchScreen.storyboard */,
 				C3ABCD3C1FE55F22003FB520 /* Info.plist */,
 			);
 			path = Surprix;
@@ -218,10 +213,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3ABCD3B1FE55F22003FB520 /* LaunchScreen.storyboard in Resources */,
-				C3ABCD381FE55F22003FB520 /* Assets.xcassets in Resources */,
 				C3059BBD1FF55508005EA8F8 /* GoogleService-Info.plist in Resources */,
 				C3ABCD361FE55F22003FB520 /* Main.storyboard in Resources */,
+				C3A6EEBA200512520007829E /* Assets.xcassets in Resources */,
 				C3D44F311FE98AFE00F87EA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,14 +314,6 @@
 				C3ABCD351FE55F22003FB520 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C3ABCD391FE55F22003FB520 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3ABCD3A1FE55F22003FB520 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -40,7 +40,6 @@ class SetViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("Anno Passato id = " + passedValue)
         self.getSetsByYear(yearId: passedValue)
     }
     
@@ -120,14 +119,12 @@ class SetViewController: UITableViewController {
         let currCell = tableView.cellForRow(at: indexPath) as! SetTableViewCell
         
         self.valueSelected = currCell.setId
-        print("Setto value: " + currCell.setId )
         performSegue(withIdentifier: "setSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "setSegue"){
             let nc = segue.destination as! SetDetailViewController
-            print("Prendo value: " + self.valueSelected )
             nc.passedValue = self.valueSelected
         }
     }

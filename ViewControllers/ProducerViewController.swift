@@ -84,14 +84,12 @@ class ProducerViewController: UITableViewController {
         let currCell = tableView.cellForRow(at: indexPath) as! ProducersTableViewCell
         
         self.valueSelected = currCell.producerId
-        print("Setto value: " + currCell.producerId )
         performSegue(withIdentifier: "producerSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "producerSegue"){
             let navCont = segue.destination as! YearViewController
-            print("Prendo value: " + self.valueSelected )
             navCont.passedValue = self.valueSelected
         }
     }

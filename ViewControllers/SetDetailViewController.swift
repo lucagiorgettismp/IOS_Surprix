@@ -42,7 +42,6 @@ class SetDetailViewController: UITableViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("Serie passata id = " + passedValue)
         self.getSurprisesBySet(setId: passedValue)
     }
     
@@ -130,7 +129,7 @@ class SetDetailViewController: UITableViewController {
     func addMissing(surpriseId: String){
         let ref = Database.database().reference()
         ref.child("missings").child(Variables.username).child(surpriseId).setValue(true)
-        let alert = UIAlertController(title: "Added", message: "Added to missings", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Added to missings", message: "Item added to missings", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
@@ -139,7 +138,7 @@ class SetDetailViewController: UITableViewController {
         let ref = Database.database().reference()
         ref.child("user_doubles").child(Variables.username).child(surpriseId).setValue(true)
         ref.child("surprise_doubles").child(surpriseId).child(Variables.username).setValue(true)
-        let alert = UIAlertController(title: "Added", message: "Added to doubles", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Added to doubles", message: "Item added to doubles", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }

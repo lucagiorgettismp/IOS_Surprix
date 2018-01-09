@@ -40,8 +40,27 @@ class MissingsViewController: UITableViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil {
+            print("1. utente trovato")
+            let ref = Database.database().reference()
+            let emailCod = Auth.auth().currentUser?.email?.replacingOccurrences(of: ".", with: ",")
+            ref.child("emails").child(emailCod!).observeSingleEvent(of: .value, with: { (snap) in
+                for child in snap.children.allObjects{
+                    let c = child as! DataSnapshot
+                    let username = c.key
+                    Variables.username = username
+                    print("2. username settato")
+                    print("3. cerco")
+                    self.getMissingData(username: Variables.username)
+                }
+            })
+        } else {
+            print("manca")
+            let controller = self.storyboard?.instantiateViewController(withIdentifier: "Login")
+            self.present(controller!, animated: true, completion: nil)
+        }
+
         super.viewDidAppear(animated)
-        self.getMissingData(username: Variables.username)
     }
     
     
@@ -49,6 +68,7 @@ class MissingsViewController: UITableViewController {
         var missings : [Surprise] = []
         
         let ref = Database.database().reference()
+        print("4. cerco con: " + Variables.username)
         ref.child("missings").child(Variables.username).observeSingleEvent(of: .value, with: { (snapshot) in
             
             for child in snapshot.children.allObjects{
@@ -124,11 +144,22 @@ class MissingsViewController: UITableViewController {
         
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in
             self.removeFromMissings(surpriseId: cell.surpId);
-            self.viewDidAppear(false)
+            self.viewDidAppear(true)
         }))
         
-        alert.addAction(UIAlertAction(title: "CANCEL", style: UIAlertActionStyle.cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "CANCEL", style: UIAlertActionStyle.cancel, handler: { action in
+            self.tableView.deselectRow(at: indexPath, animated: true)  
+        }))
         
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func logout(){
+        do{
+            try Auth.auth().signOut()
+            self.viewDidAppear(true)
+        } catch {
+            print("Errore nel logout")
+        }
     }
 }

@@ -127,8 +127,20 @@ class DoublesViewController: UITableViewController {
             self.viewDidAppear(false)
         }))
         
-        alert.addAction(UIAlertAction(title: "CANCEL", style: UIAlertActionStyle.cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "CANCEL", style: UIAlertActionStyle.cancel, handler: { action in
+            self.tableView.deselectRow(at: indexPath, animated: true)
+        }))
         
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func logout(){
+        do{
+            try Auth.auth().signOut()
+            let controller = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController")
+            self.present(controller!, animated: true, completion: nil)
+        } catch {
+            print("Errore nel logout")
+        }
     }
 }
